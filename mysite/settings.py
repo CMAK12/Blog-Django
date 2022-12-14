@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'myblog.apps.MyblogConfig',
     'event.apps.EventConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,4 +131,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL = '/awesome_media/'
+MEDIA_URL = '/media/'
