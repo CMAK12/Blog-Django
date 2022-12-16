@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'mysite',
     'myblog.apps.MyblogConfig',
     'event.apps.EventConfig',
     'django.contrib.admin',
@@ -122,6 +123,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+STATICFILE_DIRS = [
+
+    os.path.join(BASE_DIR, 'mysite/static/')
+
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
 
 # Default primary key field type
